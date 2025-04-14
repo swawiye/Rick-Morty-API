@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick and Morty</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="index.html">Characters</a></li>
+            <li><a href="episodes.html">Episodes</a></li>
+            <li><a href="locations.html">Locations</a></li>
+        </ul>
+    </nav>
+
+    <div>
+        <h1>Rick and Morty Characters</h1>
+
+        <div class="cards-container" id="cardsContainer"></div>
+
+        <div class="filter-bar">
+            <input type="text" id="nameFilter" placeholder="Search by name"/>
+
+            <select id="genderFilter">
+                <option value="">All Genders</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="genderless">Genderless</option>
+                <option value="unknown">Unknown</option>
+            </select>
+
+            <select id="speciesFilter">
+                <option value="">All Species</option>
+                <option value="Human">Human</option>
+                <option value="Humanoid">Humanoid</option>
+                <option value="Alien">Alien</option>
+                <option value="Robot">Robot</option>
+                <option value="Animal">Animal</option>
+                <option value="unknown">Unknown</option>
+            </select>
+
+            <button onclick="applyFilters()">Apply Filters</button>
+
+            <button onclick="resetFilters()">Reset Filters</button>
+        </div>
+
+        <div class="pagination">
+            <button onclick="changePage(-1)" id="prevBtn">Previous</button>
+            <button onclick="changePage(1)" id="nextBtn">Next</button>
+        </div>
+    </div>    
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

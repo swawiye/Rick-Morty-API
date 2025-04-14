@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick & Morty Episodes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="index.html">Characters</a></li>
+                <li><a href="episodes.html">Episodes</a></li>
+                <li><a href="locations.html">Locations</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div>
+        <h1>Rick and Morty Episodes</h1>
+
+        <div class="cards-container" id="episodesContainer"></div>
+
+        <div class="pagination">
+            <button onclick="changePage(-1)" id="prevBtn">Previous</button>
+            <button onclick="changePage(1)" id="nextBtn">Next</button>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="escript.js"></script>
+</body>
+</html>
