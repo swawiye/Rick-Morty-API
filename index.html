@@ -19,7 +19,9 @@
         <h1>Rick and Morty Characters</h1>
 
         <div class="cards-container" id="cardsContainer"></div>
+    </div>    
 
+    <div class="controls">
         <div class="filter-bar">
             <input type="text" id="nameFilter" placeholder="Search by name"/>
 
@@ -41,9 +43,9 @@
                 <option value="unknown">Unknown</option>
             </select>
 
-            <button onclick="applyFilters()">Apply Filters</button>
+            <button onclick="applyFilters()" type="button">Apply Filters</button>
 
-            <button onclick="resetFilters()">Reset Filters</button>
+            <button onclick="resetFilters()" type="button">Reset Filters</button>
         </div>
 
         <div class="pagination">

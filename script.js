@@ -48,6 +48,8 @@ function fetchCharacters(page = 1) {
         cardsContainer.appendChild(card);
       });
       updatePaginationButtons();
+      currentPage = page;
+      totalPages = data.info.pages;
     })
     .catch(error => {
       console.error('Error:', error);
@@ -88,3 +90,5 @@ function resetFilters() {
 
 // Initial fetch
 fetchCharacters();
+
+
